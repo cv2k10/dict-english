@@ -18,6 +18,8 @@ function Dict() {
       );
   }, [word]);
 
+  const gptBetterEng = `{Write better English without adding extra meaning and don't add double quotes at the beginning and throughout the text.}`;
+
   return (
     <div className="bg-white-300 flex flex-col max-w-sm m-auto">
       <div className="">
@@ -73,7 +75,7 @@ function Dict() {
       </a>
       <a
         className="my-1 p-2 bg-blue-500 text-white text-center rounded-lg"
-        href={`https://chat.openai.com/?q=%7BWrite%20better%20English%7D%20%20${word}`}
+        href={`https://chat.openai.com/?q=${gptBetterEng}${word}`}
         target="_target"
       >
         ChatGPT (Better English)
