@@ -19,7 +19,7 @@ function Dict() {
   }, [word]);
 
   return (
-    <div className="bg-white-300 flex flex-col max-w-sm">
+    <div className="bg-white-300 flex flex-col max-w-sm m-auto">
       <div className="">
         <p className="p-2 text-center text-gray-700">Word: {word}</p>
         {/* <input
@@ -30,40 +30,55 @@ function Dict() {
         /> */}
       </div>
       <a
-        className="mx-2 my-1 p-2 bg-blue-500 text-white text-center rounded-lg"
+        className="my-1 p-2 bg-blue-500 text-white text-center rounded-lg"
         href={`https://www.google.com/search?q=define+${word}`}
         target="_blank"
       >
         Google
       </a>
       <a
-        className="mx-2 my-1 p-2 bg-blue-500 text-white text-center rounded-lg"
+        className="my-1 p-2 bg-blue-500 text-white text-center rounded-lg"
         href={`https://www.collinsdictionary.com/dictionary/english/${word}`}
         target="_blank"
       >
         Collins
       </a>
       <a
-        className="mx-2 my-1 p-2 bg-blue-500 text-white text-center rounded-lg"
+        className="my-1 p-2 bg-blue-500 text-white text-center rounded-lg"
         href={`https://howjsay.com/how-to-pronounce-${word}`}
         target="_blank"
       >
         howjsay
       </a>
       <a
-        className="mx-2 my-1 p-2 bg-blue-500 text-white text-center rounded-lg"
+        className="my-1 p-2 bg-blue-500 text-white text-center rounded-lg"
         href={`https://youglish.com/pronounce/${word}/english/uk`}
         target="_blank"
       >
         YouGlish (UK)
       </a>
       <a
-        className="mx-2 my-1 p-2 bg-blue-500 text-white text-center rounded-lg"
+        className="my-1 p-2 bg-blue-500 text-white text-center rounded-lg"
+        href={`https://www.deepl.com/en/translator#en/zh-hans/${word}`}
+        target="_blank"
+      >
+        Deepl
+      </a>      
+      <a
+        className="my-1 p-2 bg-blue-500 text-white text-center rounded-lg"
         href={`https://chat.openai.com/?q=${gptWord}`}
         target="_blank"
       >
-        ChatGPT
+        ChatGPT (word)
       </a>
+      <a
+        className="my-1 p-2 bg-blue-500 text-white text-center rounded-lg"
+        href={`https://chat.openai.com/?q=%7BWrite%20better%20English%7D%20%20${gptWord}`}
+        target="_blank"
+      >
+        ChatGPT (Better English)
+      </a>
+
     </div>
   );
 }
