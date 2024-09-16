@@ -80,6 +80,16 @@ function Dict() {
       >
         ChatGPT (Better English)
       </a>
+      <a
+        className="my-1 p-2 bg-blue-500 text-white text-center rounded-lg"
+        href={`https://chat.openai.com/?q=${word}`}
+        target="_target"
+      >
+        ChatGPT
+      </a>
+      <p>https://chat.openai.com/?q=${word}</p>
+
+      <hr />
 
     </div>
   );
